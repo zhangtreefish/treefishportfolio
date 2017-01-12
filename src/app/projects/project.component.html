@@ -1,0 +1,36 @@
+<section *ngIf="project" class="jumbotron">
+	<p>{{project.description}}</p>
+	<div *ngIf="project.image"> Click the image to visit {{project.title}}
+		<p><a [href]="project.url">
+			<img *ngIf="project.image" [src]="project.image" alt="img" width="500px" />
+			</a>
+		</p>
+	</div>
+	<button type ='button'>
+		<a [href]="project.code"> <span class="glyphicon glyphicon-chevron-left"></span><span class="glyphicon glyphicon-chevron-right"></span>Code</a>
+	</button>
+	<dl>
+		<dt class="btn btn-info btn-lg">Tools: </dt>
+		<dd class="btn btn-info btn-lg" *ngFor="let tool of project.tools"> {{tool}} </dd>
+	</dl>
+	<div>
+      <label>title: </label>
+      <input [(ngModel)]="project.title" placeholder="title"/>
+    </div>
+	<button (click)="gotoProjects()">Back</button>
+</section>
+
+<base target="_blank">
+<iframe id="SusieZhangProject"
+    name="SusieZhangProject"
+    title="SusieZhangProject"
+    width="400"
+    height="300"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="">
+</iframe>
+
+

@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<div class='container-fluid'>
+	<h1>{{title}}</h1>
+	<ul class='nav nav-tabs'>
+		<li>
+			<a [routerLink]="['/projects']" routerLinkActive="active">
+				<span class="glyphicon glyphicon-list"></span>
+				 Projects
+			</a>
+		</li>
+		<li>
+			<a [routerLink]="['/skills']" routerLinkActive="active">
+			<span class="glyphicon glyphicon-wrench"></span>
+			 Skills
+			</a>
+		</li>
+	</ul>
+</div>
+<router-outlet></router-outlet>
+

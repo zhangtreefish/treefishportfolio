@@ -1,0 +1,23 @@
+<div class='front'>
+    <p class='title'>
+        Front End
+        <img src='http://i.imgur.com/DflbTGt.jpg' alt='image' width='100px'/>
+    </p>
+    <ul class="projects">
+        <li *ngFor="let project of frontEndProjects" [class.selected]="project === selectedProject" (click)="onClick(project)">
+            {{project.title}}
+        </li>
+    </ul>
+</div>
+<div class='full'>
+    <p class='title'>
+        <img src='http://i.imgur.com/3you7es.jpg' alt='image' width='100px'/>
+        Full Stack
+    <p>
+    <ul class="projects">
+        <li *ngFor="let project of fullStackProjects" [class.selected]="project === selectedProject" (click)="onClick(project)">
+            {{project.title}}
+        </li>
+    </ul>
+</div>
+
