@@ -11,8 +11,8 @@ export class InMemoryDataService implements InMemoryDbService {
                     "description": "Showcased my projects and web develop skills",
                     "tools": ["Angular2", "TypeScript", "Angular2 CLI", "Selenium", "WebDriverIO", "Node.js", 'JasmineJS'],
                     "image": "http://i.imgur.com/yyR3ZmX.png",
-                    "url": "http://zhangtreefish.github.io/ng2-portfolio",
-                    "code": "https://github.com/zhangtreefish/ng2-portfolio.git"
+                    "url": "https://zhangtreefish.github.io/treefishportfolio",
+                    "code": "https://github.com/zhangtreefish/treefishportfolio.git"
                 },
                 {
                     "id": "2",
