@@ -2,11 +2,11 @@
     font-size: 1.5em;
 }
 .front {
-	color: orange;
+	color: tomato;
 }
 
 .full {
- 	color: purple;
+ 	color: #02b3e4;
 }
 .selected {
     background-color: #CFD8DC !important;
